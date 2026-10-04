@@ -12,6 +12,8 @@ function harness.stage(present_mods)
       recipe = {},
       technology = {
         ["planetaris-compression"] = { effects = {} },
+        ["planetaris-silica-processing"] = { effects = {} },
+        ["planetaris-space-facilities-1"] = { effects = {} },
         ["planetaris-glass"] = { effects = {} },
         ["kr-advanced-chemistry"] = { effects = {} },
         ["planetaris-polishing"] = { effects = {} },

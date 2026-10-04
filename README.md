@@ -5,12 +5,16 @@ and glass panels. This mod adds more recipes that consume pure sand.
 
 | Machine | Ingredients | Products | Technology | Requires |
 | --- | --- | --- | --- | --- |
+| Press | 400 pure sand + 20 sulfuric acid + 1 calcite | 1 silica | `planetaris-silica-processing` | |
+| Press | 150 pure sand | 5 Arig glass panels | `planetaris-glass` | |
+| Press | 1000 pure sand + 10 aluminium + 3 beryllium nitride + 20 silica | 1 refractory ceramics | `planetaris-space-facilities-1` | Planetaris Hyarion |
 | Press | 20 pure sand | 1 stone | `planetaris-compression` | |
 | Press | 100 pure sand + 5 stone brick + 1 iron ore + 50 water | 15 concrete | `planetaris-compression` | |
 | Press | 400 pure sand | 1 landfill | `planetaris-compression` | |
 | Press | 50 pure sand | 5 Krastorio 2 sand (`kr-sand`) | `planetaris-compression` | Krastorio 2 |
+| Press | 20 pure sand | 1 Krastorio 2 glass (`kr-glass`) | `planetaris-glass` | Krastorio 2 |
 | Filtration Plant | 100 dirty water + 1 pure sand barrel | 100 water + 1 stone + 1 empty barrel | `kr-advanced-chemistry` | Krastorio 2 |
-| Assembling machine | 20 pure sand + 5 stone | 1 Igrys glass | `planetaris-glass` | Igrys |
+| Press | 20 pure sand | 1 Magic glass | `planetaris-glass` | Igrys |
 | Polisher | 50 pure sand + 10 iron ore | 50 polishing compound | `planetaris-polishing` | Planetaris Hyarion |
 
 A recipe with an entry in the Requires column exists only when that mod is
@@ -54,10 +58,12 @@ matching tag:
     git tag v1.0.0
     git push origin v1.0.0
 
-Pushing a `v*` tag runs `.github/workflows/publish.yml`, which verifies the tag
-matches the version in `info.json`, builds the mod zip, and uploads it to the
+Pushing to `main` or pushing a `v*` tag runs `.github/workflows/publish.yml`, which verifies the tag
+matches the version in `info.json` for tag pushes, builds the mod zip, and uploads it to the
 Factorio mod portal.
 
 Before the first release, set the `FACTORIO_API_KEY` repository secret to an API
 key created at https://factorio.com/profile with the `ModPortal: Upload Mods`
 usage.
+
+Push a new version in `info.json` to `main` to publish automatically. Already published versions are skipped.

@@ -1,0 +1,41 @@
+local harness = require("tests.harness")
+
+harness.stage({})
+harness.load("prototypes.silica")
+local recipe = data.raw.recipe["arig-pure-sand-silica"]
+assert(recipe.category == "compressing")
+assert(recipe.allow_productivity and recipe.auto_recycle == false)
+assert(#recipe.ingredients == 3)
+assert(recipe.ingredients[1].name == "planetaris-pure-sand" and recipe.ingredients[1].amount == 400)
+assert(recipe.ingredients[2].name == "sulfuric-acid" and recipe.ingredients[2].amount == 20)
+assert(recipe.ingredients[3].name == "calcite" and recipe.ingredients[3].amount == 1)
+assert(recipe.results[1].name == "planetaris-silica" and recipe.results[1].amount == 1)
+assert(data.raw.technology["planetaris-silica-processing"].effects[1].recipe == "arig-pure-sand-silica")
+
+harness.stage({})
+harness.load("prototypes.glass-panel")
+local recipe = data.raw.recipe["arig-pure-sand-glass-panel"]
+assert(recipe.category == "compressing")
+assert(recipe.allow_productivity and recipe.auto_recycle == false)
+assert(#recipe.ingredients == 1)
+assert(recipe.ingredients[1].name == "planetaris-pure-sand" and recipe.ingredients[1].amount == 150)
+assert(recipe.results[1].name == "planetaris-glass-panel" and recipe.results[1].amount == 5)
+assert(data.raw.technology["planetaris-glass"].effects[1].recipe == "arig-pure-sand-glass-panel")
+
+harness.stage({["planetaris-hyarion"] = "1.3.9"})
+harness.load("prototypes.refractory-ceramics")
+local recipe = data.raw.recipe["arig-pure-sand-refractory-ceramics"]
+assert(recipe.category == "compressing")
+assert(recipe.allow_productivity and recipe.auto_recycle == false)
+assert(#recipe.ingredients == 4)
+assert(recipe.ingredients[1].name == "planetaris-pure-sand" and recipe.ingredients[1].amount == 1000)
+assert(recipe.ingredients[2].name == "planetaris-aluminium" and recipe.ingredients[2].amount == 10)
+assert(recipe.ingredients[3].name == "planetaris-beryllium-nitride" and recipe.ingredients[3].amount == 3)
+assert(recipe.ingredients[4].name == "planetaris-silica" and recipe.ingredients[4].amount == 20)
+assert(recipe.results[1].name == "planetaris-refractory-ceramics" and recipe.results[1].amount == 1)
+assert(data.raw.technology["planetaris-space-facilities-1"].effects[1].recipe == "arig-pure-sand-refractory-ceramics")
+
+harness.stage({})
+harness.load("prototypes.refractory-ceramics")
+assert(next(data.raw.recipe) == nil)
+assert(#data.raw.technology["planetaris-space-facilities-1"].effects == 0)

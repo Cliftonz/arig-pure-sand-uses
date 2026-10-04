@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-10-04
+  Features:
+    - Added direct Press recipes for Arig glass panels and silica, retaining acid and calcite for silica.
+    - Added an optional Hyarion ceramics recipe replacing 5 silica with 1000 pure sand while retaining other ingredients.
+    - Changed Magic glass production to a Press recipe using 20 pure sand with no stone.
+    - Added a Press recipe turning 20 pure sand into 1 Krastorio 2 glass, unlocked by Planetaris Glass.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-10-04
   Features:

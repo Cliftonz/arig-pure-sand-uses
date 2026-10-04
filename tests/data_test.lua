@@ -7,6 +7,7 @@ local always = {
 }
 
 local optional = {
+  "arig-pure-sand-kr-glass",
   "arig-pure-sand-kr-sand",
   "arig-pure-sand-dirty-water-filtration",
   "arig-pure-sand-igrys-glass",
