@@ -1,0 +1,16 @@
+{
+  "name": "arig-pure-sand-uses",
+  "version": "1.0.0",
+  "title": "Arig Pure Sand Uses",
+  "author": "zacclifton",
+  "factorio_version": "2.0",
+  "description": "New uses for Planetaris Arig pure sand: stone, concrete and landfill, plus Krastorio 2, Igrys and Hyarion recipes when those mods are present.",
+  "dependencies": [
+    "base >= 2.0",
+    "planetaris-arig >= 1.1.46",
+    "? Krastorio2",
+    "? Igrys",
+    "? planetaris-hyarion"
+  ],
+  "license": "MIT"
+}

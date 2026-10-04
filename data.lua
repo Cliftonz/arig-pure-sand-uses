@@ -1,0 +1,7 @@
+require("prototypes.stone")
+require("prototypes.concrete")
+require("prototypes.landfill")
+require("prototypes.kr-sand")
+require("prototypes.dirty-water-sand-filter")
+require("prototypes.igrys-glass")
+require("prototypes.polishing-compound")

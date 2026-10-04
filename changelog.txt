@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-10-04
+  Features:
+    - Added a Press recipe turning 20 pure sand into 1 stone.
+    - Added a Press recipe turning 100 pure sand, 5 stone brick, 1 iron ore and 50 water into 15 concrete.
+    - Added a Press recipe turning 400 pure sand into 1 landfill.
+    - Added a Press recipe turning 50 pure sand into 5 Krastorio 2 sand. This recipe exists only with Krastorio 2.
+    - Added a Filtration Plant recipe turning 100 dirty water and 1 pure sand barrel into 100 water, 1 stone and the empty barrel. This recipe exists only with Krastorio 2.
+    - Added an assembling machine recipe turning 20 pure sand and 5 stone into 1 Igrys glass. This recipe exists only with Igrys.
+    - Added a Polisher recipe turning 50 pure sand and 10 iron ore into 50 polishing compound. This recipe needs no lava and exists only with Planetaris Hyarion.
+    - The Press recipes are unlocked by the Compression technology from Planetaris Arig.
+    - The Igrys glass recipe is unlocked by the Glass technology from Planetaris Arig.
+    - The Filtration Plant recipe is unlocked by the Advanced chemistry technology from Krastorio 2.
+    - The polishing compound recipe is unlocked by the Polishing technology from Planetaris Hyarion.
+    - All recipes accept productivity.
