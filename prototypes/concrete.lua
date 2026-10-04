@@ -13,7 +13,7 @@ data:extend({
       { type = "fluid", name = "water", amount = 50 },
     },
     results = {
-      { type = "item", name = "concrete", amount = 15 },
+      { type = "item", name = "concrete", amount = 10 },
     },
   },
 })

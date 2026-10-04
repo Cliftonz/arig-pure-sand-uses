@@ -9,7 +9,7 @@ and glass panels. This mod adds more recipes that consume pure sand.
 | Press | 150 pure sand | 5 Arig glass panels | `planetaris-glass` | |
 | Press | 1000 pure sand + 10 aluminium + 3 beryllium nitride + 20 silica | 1 refractory ceramics | `planetaris-space-facilities-1` | Planetaris Hyarion |
 | Press | 20 pure sand | 1 stone | `planetaris-compression` | |
-| Press | 100 pure sand + 1 iron ore + 50 water | 15 concrete | `planetaris-compression` | |
+| Press | 100 pure sand + 1 iron ore + 50 water | 10 concrete | `planetaris-compression` | |
 | Press | 400 pure sand | 1 landfill | `planetaris-compression` | |
 | Press | 50 pure sand | 5 Krastorio 2 sand (`kr-sand`) | `planetaris-compression` | Krastorio 2 |
 | Press | 20 pure sand | 1 Krastorio 2 glass (`kr-glass`) | `planetaris-glass` | Krastorio 2 |

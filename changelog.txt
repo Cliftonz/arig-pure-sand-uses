@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2026-10-04
+  Balancing:
+    - Reduced pure sand concrete output from 15 to 10, matching the standard recipe before Press productivity.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2026-10-04
   Bugfixes:

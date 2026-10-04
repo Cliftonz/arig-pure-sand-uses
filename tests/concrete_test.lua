@@ -29,7 +29,7 @@ end
 assert(#recipe.results == 1, "should have exactly one result")
 assert(recipe.results[1].type == "item", "result type should be item")
 assert(recipe.results[1].name == "concrete", "result name should be concrete")
-assert(recipe.results[1].amount == 15, "result amount should be 15")
+assert(recipe.results[1].amount == 10, "result amount should be 10")
 
 local field_count = 0
 for _ in pairs(recipe) do
