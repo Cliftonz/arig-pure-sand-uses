@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2026-10-04
+  Bugfixes:
+    - Removed stone bricks from the pure sand concrete recipe. It now uses only pure sand, iron ore and water.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2026-10-04
   Features:

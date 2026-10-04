@@ -9,7 +9,6 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       { type = "fluid", name = "planetaris-pure-sand", amount = 100 },
-      { type = "item", name = "stone-brick", amount = 5 },
       { type = "item", name = "iron-ore", amount = 1 },
       { type = "fluid", name = "water", amount = 50 },
     },

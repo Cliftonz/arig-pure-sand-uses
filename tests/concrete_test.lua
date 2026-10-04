@@ -15,11 +15,10 @@ assert(recipe.allow_productivity == true, "allow_productivity should be true")
 
 local expected_ingredients = {
   { type = "fluid", name = "planetaris-pure-sand", amount = 100 },
-  { type = "item", name = "stone-brick", amount = 5 },
   { type = "item", name = "iron-ore", amount = 1 },
   { type = "fluid", name = "water", amount = 50 },
 }
-assert(#recipe.ingredients == #expected_ingredients, "should have exactly four ingredients")
+assert(#recipe.ingredients == #expected_ingredients, "should have exactly three ingredients")
 for position, expected in ipairs(expected_ingredients) do
   local ingredient = recipe.ingredients[position]
   assert(ingredient.type == expected.type, "ingredient " .. position .. " type should be " .. expected.type)
