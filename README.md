@@ -24,12 +24,49 @@ The Filtration Plant recipe takes pure sand in a barrel because the Filtration
 Plant has a single fluid input. The Polisher recipe makes polishing compound
 with no lava.
 
-All recipes accept productivity and have no surface restriction.
+Every recipe in the table accepts productivity and has no surface restriction.
+
+## Arig roboports
+
+With Krastorio 2 installed, this mod adds the Arig big roboport and the Arig
+small roboport. They are variants of the Krastorio 2 big roboport and small
+roboport that you can place only on Arig. Without Krastorio 2, neither roboport
+exists.
+
+Each Arig roboport has a shorter range and a smaller energy buffer than the
+Krastorio 2 roboport it is based on:
+
+| Roboport | Stat | Krastorio 2 | Arig |
+| --- | --- | --- | --- |
+| Big | Logistics radius | 100 | 80 |
+| Big | Construction radius | 200 | 182 |
+| Big | Energy buffer | 1 GJ | 800 MJ |
+| Big | Energy input | 100 MW | 80 MW |
+| Small | Logistics radius | 18 | 14 |
+| Small | Construction radius | 34 | 31 |
+| Small | Energy buffer | 300 MJ | 240 MJ |
+| Small | Energy input | 24 MW | 19.2 MW |
+
+Robot slots, health, and charging are unchanged.
+
+| Ingredients | Products |
+| --- | --- |
+| 20 steel plate + 50 heavy glass + 80 rare metals + 1 Arig roboport | 1 Arig big roboport |
+| 10 steel plate + 4 heavy glass + 20 rare metals + 5 electronic components | 2 Arig small roboports |
+
+The `planetaris-arig-roboport` technology unlocks both recipes. The roboport
+recipes do not accept productivity.
+
+Planetaris Arig already blocks the vanilla roboport on Arig. This mod blocks the
+Krastorio 2 big roboport and small roboport on Arig in the same way. Roboports
+that are already placed are not affected.
 
 ## Requirements
 
 Planetaris Arig is required. Krastorio 2, Igrys, and Planetaris Hyarion are
-optional. See `info.json` for exact version bounds.
+optional. Krastorio2-spaced-out is an optional load-order dependency: when it is
+installed, this mod loads after it so that the Krastorio 2 roboports stay
+blocked on Arig. See `info.json` for exact version bounds.
 
 ## License
 

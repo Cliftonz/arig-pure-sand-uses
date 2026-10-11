@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2026-10-11
+  Features:
+    - Added the Arig big roboport (Krastorio 2 only): placeable only on Arig, 80 logistics and 182 construction radius, 800 MJ buffer, crafted from 20 steel plate, 50 heavy glass, 80 rare metals and 1 Arig roboport.
+    - Added the Arig small roboport (Krastorio 2 only): placeable only on Arig, 14 logistics and 31 construction radius, 240 MJ buffer, crafted in pairs from 10 steel plate, 4 heavy glass, 20 rare metals and 5 electronic components.
+    - Both roboports are unlocked by the Arig roboport technology.
+  Changes:
+    - Krastorio 2 big and small roboports can no longer be placed on Arig. Roboports already placed keep working.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2026-10-04
   Balancing:

@@ -5,11 +5,24 @@ for name in pairs(package.loaded) do
   builtin[name] = true
 end
 
+function table.deepcopy(value)
+  if type(value) ~= "table" then
+    return value
+  end
+  local copy = {}
+  for key, child in pairs(value) do
+    copy[key] = table.deepcopy(child)
+  end
+  return copy
+end
+
 function harness.stage(present_mods)
   mods = present_mods
   data = {
     raw = {
       recipe = {},
+      item = {},
+      roboport = {},
       technology = {
         ["planetaris-compression"] = { effects = {} },
         ["planetaris-silica-processing"] = { effects = {} },
@@ -17,6 +30,7 @@ function harness.stage(present_mods)
         ["planetaris-glass"] = { effects = {} },
         ["kr-advanced-chemistry"] = { effects = {} },
         ["planetaris-polishing"] = { effects = {} },
+        ["planetaris-arig-roboport"] = { effects = {} },
       },
     },
   }
